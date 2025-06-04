@@ -1,0 +1,18 @@
+publish:
+  entrypoint: solver
+
+agents:
+  solver:
+    model: o3-mini
+    instructions: |-
+      Your task is to solve problems from Advent of Code.
+      You can fetch a problem from its website based on the year and day.
+      Read the problem, think about how to solve it, generate some code, and then test it out.
+      If the code is correct, call the write_code tool.
+      ALWAYS run your code to make sure it is correct, before you call write_code.
+    tools: [ "aoc helper" ]
+
+mcpServers:
+  aoc helper:
+    command: uv
+    args: [ "run", "main.py" ]

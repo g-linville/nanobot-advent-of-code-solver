@@ -1,0 +1,12 @@
+[project]
+name = "nanobot-advent-of-code-solver"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.6.1",
+    "markitdown>=0.1.2",
+    "microsandbox>=0.1.8",
+    "requests>=2.32.3",
+]
