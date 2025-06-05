@@ -8,4 +8,6 @@ First make sure you clone the repo and run `uv sync` to install the packages. (Y
 
 You will also need to have [microsandbox](https://github.com/microsandbox/microsandbox) installed. Start the server by running `msb server start --dev`.
 
+Export your OpenAI API key to the environment variable `OPENAI_API_KEY`.
+
 Then you can run this agent with [nanobot](https://github.com/nanobot-ai/nanobot) by running `nanobot run nanobot.yaml`. Tell the agent which problem you would like to solve. I typically say something like "try 2024 day 2".
